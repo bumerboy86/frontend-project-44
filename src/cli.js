@@ -1,5 +1,8 @@
 const readlineSync = require('readline-sync');
 
-const name = readlineSync.question('May I have your name?: ');
+const askQuestion = (question) => {
+  const answer = readlineSync.question(question);
+  return answer;
+};
 
-console.log(`Hello, ${name}!`);
+module.exports = askQuestion;
