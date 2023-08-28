@@ -8,7 +8,7 @@ const isEvenGame = (name) => {
   while (true) {
     let sicretNumber = Math.floor(Math.random() * 100) + 1;
     const correctAnswer = isEven(sicretNumber) ? 'yes' : 'no';
-    const question = askQuestion(`Question: ${sicretNumber}`);
+    const question = askQuestion(`Question: ${sicretNumber} `);
     console.log(question);
     if (correctAnswer === question) {
       step += 1;
