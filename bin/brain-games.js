@@ -1,5 +1,5 @@
 #!/usr/bin/env node
 
-console.log("Welcome to the Brain Games!");
+console.log('Welcome to the Brain Games!');
 
-require("../src/cli.js");
+require('../src/cli');
