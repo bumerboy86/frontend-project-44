@@ -9,4 +9,4 @@
 
 # Пример работы Brain-Calc
 
-[![Brain-Calc](https://asciinema.org/a/76c5OFNGMWPWXYfyjtvm9z1JW.svg)](https://asciinema.org/a/76c5OFNGMWPWXYfyjtvm9z1JW)
+[![Brain-Calc](https://asciinema.org/a/gesp2jk3zkN6W47bygIFZEzmi.svg)](https://asciinema.org/a/gesp2jk3zkN6W47bygIFZEzmi)
