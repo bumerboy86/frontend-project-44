@@ -13,6 +13,7 @@
   "author": "Ruslan",
   "license": "ISC",
   "dependencies": {
+    "http-server": "^14.1.1",
     "readline-sync": "^1.4.10"
   },
   "devDependencies": {
