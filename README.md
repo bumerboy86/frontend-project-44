@@ -5,4 +5,4 @@
 
 # Пример работы проекта
 
-[![Пример работы проекта](https://asciinema.org/a/b1epurGbwImFpv56HAdDoNNq6.svg)](https://asciinema.org/a/b1epurGbwImFpv56HAdDoNNq6)
+[![Пример работы проекта](https://asciinema.org/a/LDq7bMnlOxpCuCvJjO3TgY4MG.svg)](https://asciinema.org/a/LDq7bMnlOxpCuCvJjO3TgY4MG)
