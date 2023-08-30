@@ -18,7 +18,7 @@ console.log('Answer "yes" if the number is even, otherwise answer "no".');
 for (let i = 0; i < step; i += 1) {
   const sicretNumber = Math.floor(Math.random() * 100) + 1;
   const correctAnswer = isEven(sicretNumber) ? 'yes' : 'no';
-  console.log(`evenAnswer: ${sicretNumber}`);
+  console.log(`Question: ${sicretNumber}`);
   const evenAnswer = askevenAnswer('Your answer: ');
   if (correctAnswer === evenAnswer) {
     console.log('Correct!');
