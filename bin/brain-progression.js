@@ -11,9 +11,11 @@ let finish = false;
 const rounds = 3;
 
 for (let i = 0; i < rounds; i += 1) {
-  const step = Math.floor(Math.random() * (11 - 5) + 5);
-  const hidenNumber = Math.floor(Math.random() * (step - 1 - 5) + 5);
-  const progressionSteps = Math.floor(Math.random() * (11 - 1) + 1);
+  const min = 5;
+  const max = 10;
+  const step = Math.floor(Math.random() * (max - min) + min);
+  const hidenNumber = Math.floor(Math.random() * (step - 1 - min) + min);
+  const progressionSteps = Math.floor(Math.random() * (max - 1) + 1);
   let startNumber = Math.floor(Math.random() * (100 - 1) + 1);
   let secret = 0;
   for (let j = 0; j < step; j += 1) {
@@ -26,15 +28,15 @@ for (let i = 0; i < rounds; i += 1) {
     const nexNum = startNumber + progressionSteps;
     startNumber = nexNum;
   }
-  console.log(`Question:${progressionArr.concat(' ')}`);
-  const progressionAnswer = askprogressionAnswer('Your answer: ');
-  if (secret === Number(progressionAnswer)) {
+  console.log(`Question: ${progressionArr.join(' ')}`);
+  const userAnswer = askprogressionAnswer('Your answer: ');
+  if (secret === Number(userAnswer)) {
     console.log('Correct!');
     finish = true;
     progressionArr = [];
   } else {
     console.log(
-      `${progressionAnswer}' is wrong answer ;(. Correct answer was '${secret}'.\nLet's try again, ${userName}!`,
+      `${userAnswer}' is wrong answer ;(. Correct answer was '${secret}'.\nLet's try again, ${userName}!`,
     );
     finish = false;
     break;
