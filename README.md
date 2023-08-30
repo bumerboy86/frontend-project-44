@@ -10,3 +10,7 @@
 # Пример работы Brain-Calc
 
 [![Brain-Calc](https://asciinema.org/a/gesp2jk3zkN6W47bygIFZEzmi.svg)](https://asciinema.org/a/gesp2jk3zkN6W47bygIFZEzmi)
+
+# Пример работы Brain-Progression
+
+[![Brain-Progression](https://asciinema.org/a/cDwWxexS1D2gwcXgaEPBGZ4qk.svg)](https://asciinema.org/a/cDwWxexS1D2gwcXgaEPBGZ4qk)
