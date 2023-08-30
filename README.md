@@ -2,7 +2,7 @@
 
 [![Actions Status](https://github.com/bumerboy86/frontend-project-44/workflows/hexlet-check/badge.svg)](https://github.com/bumerboy86/frontend-project-44/actions)
 [![Maintainability](https://api.codeclimate.com/v1/badges/4a6f7f7ce6b2d4fdc4e3/maintainability)](https://codeclimate.com/github/bumerboy86/frontend-project-44/maintainability)
-[![Node.js](https://img.shields.io/badge/Node.js-v14.17-green)](https://nodejs.org/ru)
+[![Node.js](https://img.shields.io/badge/Node.js-v20.2.0.-green)](https://nodejs.org/ru)
 
 # Инструкции по запуску проекта
 
@@ -36,7 +36,7 @@
 > После успешного добавления пользователя запустите
 
 - npm publish --dry-run
-- Затем npm link
+- npm link
 
 > После выполнения инструкций можете запускать игры описаные в примерах ниже
 
