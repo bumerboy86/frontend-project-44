@@ -28,7 +28,7 @@ for (let i = 0; i < rounds; i += 1) {
   }
   console.log(`progressionAnswer: ${progressionArr.concat(' ')}`);
   const progressionAnswer = askprogressionAnswer('Your answer: ');
-  if (secret === +progressionAnswer) {
+  if (secret === Number(progressionAnswer)) {
     console.log('Correct!');
     finish = true;
     progressionArr = [];
