@@ -2,13 +2,6 @@
 
 const askQuestion = require('../src/cli');
 
-const checkGcd = (a, b) => {
-  if (b === 0) {
-    return a;
-  }
-  return checkGcd(b, a % b);
-};
-
 console.log('Welcome to the Brain Games!');
 
 const userName = askQuestion('May I have your name?: ');
@@ -18,15 +11,21 @@ console.log(`Hello, ${userName}!`);
 const step = 3;
 let finish = false;
 
-console.log('Find the greatest common divisor of given numbers.');
+const isPrime = (num) => {
+  for (let i = 2; i < num; i += 1) {
+    if (num % i === 0) return false;
+  }
+  return num !== 1;
+};
+
+console.log('Answer "yes" if given number is prime. Otherwise answer "no".');
 
 for (let i = 0; i < step; i += 1) {
-  const firstNum = Math.floor(Math.random() * 100) + 1;
-  const secNum = Math.floor(Math.random() * 100) + 1;
-  const correctAnswer = checkGcd(firstNum, secNum);
-  console.log(`Question: ${firstNum} ${secNum}`);
+  const randomtNum = Math.floor(Math.random() * 100) + 1;
+  const correctAnswer = isPrime(randomtNum) ? 'yes' : 'no';
+  console.log(`Question: ${randomtNum}`);
   const question = askQuestion('Your answer: ');
-  if (correctAnswer === Number(question)) {
+  if (correctAnswer === question) {
     console.log('Correct!');
     finish = true;
   } else {

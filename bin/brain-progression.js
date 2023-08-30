@@ -34,7 +34,7 @@ for (let i = 0; i < rounds; i += 1) {
     progressionArr = [];
   } else {
     console.log(
-      `Your answer: ${question}\n'${question}' is wrong answer ;(. Correct answer was '${secret}'.\nLet's try again, ${userName}!`,
+      `${question}' is wrong answer ;(. Correct answer was '${secret}'.\nLet's try again, ${userName}!`,
     );
     finish = false;
     break;

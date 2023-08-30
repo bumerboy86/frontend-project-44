@@ -13,4 +13,8 @@
 
 # Пример работы Brain-Progression
 
-[![Brain-Progression](https://asciinema.org/a/cDwWxexS1D2gwcXgaEPBGZ4qk.svg)](https://asciinema.org/a/cDwWxexS1D2gwcXgaEPBGZ4qk)
+[![Brain-Progression](https://asciinema.org/a/VxfdpFEK0g3mZFPMGXqLyg2Kl.svg)](https://asciinema.org/a/VxfdpFEK0g3mZFPMGXqLyg2Kl)
+
+# Пример работы Brain-Prime
+
+[![Brain-Prime](https://asciinema.org/a/U5wYEro2Dq7aV0qK5AO97D6kb.svg)](https://asciinema.org/a/U5wYEro2Dq7aV0qK5AO97D6kb)
