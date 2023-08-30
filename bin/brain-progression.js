@@ -26,7 +26,7 @@ for (let i = 0; i < rounds; i += 1) {
     const nexNum = startNumber + progressionSteps;
     startNumber = nexNum;
   }
-  console.log(`Question: ${progressionArr.concat(' ')}`);
+  console.log(`Question:${progressionArr.concat(' ')}`);
   const progressionAnswer = askprogressionAnswer('Your answer: ');
   if (secret === Number(progressionAnswer)) {
     console.log('Correct!');
