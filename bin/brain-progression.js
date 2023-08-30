@@ -1,8 +1,8 @@
 #!/usr/bin/env node
-const askQuestion = require('../src/cli');
+const askprogressionAnswer = require('../src/cli');
 
 console.log('Welcome to the Brain Games!');
-const userName = askQuestion('May I have your name?: ');
+const userName = askprogressionAnswer('May I have your name?: ');
 console.log(`Hello, ${userName}!`);
 
 console.log('What number is missing in the progression?');
@@ -26,15 +26,15 @@ for (let i = 0; i < rounds; i += 1) {
     const nexNum = startNumber + progressionSteps;
     startNumber = nexNum;
   }
-  console.log(`Question: ${progressionArr.concat(' ')}`);
-  const question = askQuestion('Your answer: ');
-  if (secret === Number(question)) {
+  console.log(`progressionAnswer: ${progressionArr.concat(' ')}`);
+  const progressionAnswer = askprogressionAnswer('Your answer: ');
+  if (secret === Number(progressionAnswer)) {
     console.log('Correct!');
     finish = true;
     progressionArr = [];
   } else {
     console.log(
-      `${question}' is wrong answer ;(. Correct answer was '${secret}'.\nLet's try again, ${userName}!`,
+      `${progressionAnswer}' is wrong answer ;(. Correct answer was '${secret}'.\nLet's try again, ${userName}!`,
     );
     finish = false;
     break;

@@ -24,13 +24,13 @@ for (let i = 0; i < step; i += 1) {
   const randomtNum = Math.floor(Math.random() * 100) + 1;
   const correctAnswer = isPrime(randomtNum) ? 'yes' : 'no';
   console.log(`Question: ${randomtNum}`);
-  const question = askQuestion('Your answer: ');
-  if (correctAnswer === question) {
+  const isPrimeAnswer = askQuestion('Your answer: ');
+  if (correctAnswer === isPrimeAnswer) {
     console.log('Correct!');
     finish = true;
   } else {
     console.log(
-      `'${question}' is wrong answer ;(. Correct answer was '${correctAnswer}'.\nLet's try again, ${userName}!`,
+      `'${isPrimeAnswer}' is wrong answer ;(. Correct answer was '${correctAnswer}'.\nLet's try again, ${userName}!`,
     );
     finish = false;
     break;

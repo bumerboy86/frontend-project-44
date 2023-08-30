@@ -23,15 +23,15 @@ console.log('Find the greatest common divisor of given numbers.');
 for (let i = 0; i < step; i += 1) {
   const firstNum = Math.floor(Math.random() * 100) + 1;
   const secNum = Math.floor(Math.random() * 100) + 1;
-  const correctAnswer = checkGcd(firstNum, secNum);
+  const gcdNumber = checkGcd(firstNum, secNum);
   console.log(`Question: ${firstNum} ${secNum}`);
-  const question = askQuestion('Your answer: ');
-  if (correctAnswer === Number(question)) {
+  const gcdAnswer = askQuestion('Your answer: ');
+  if (gcdNumber === Number(gcdAnswer)) {
     console.log('Correct!');
     finish = true;
   } else {
     console.log(
-      `'${question}' is wrong answer ;(. Correct answer was '${correctAnswer}'.\nLet's try again, ${userName}!`,
+      `'${gcdAnswer}' is wrong answer ;(. Correct answer was '${gcdNumber}'.\nLet's try again, ${userName}!`,
     );
     finish = false;
     break;
