@@ -9,12 +9,16 @@
 
 # Пример работы Brain-Calc
 
+[![Brain-Calc](https://asciinema.org/a/2S0yROlTIwjAyxG1o0VSlWWNO.svg)](https://asciinema.org/a/2S0yROlTIwjAyxG1o0VSlWWNO)
+
+# Пример работы Brain-Gcd
+
 [![Brain-Calc](https://asciinema.org/a/gesp2jk3zkN6W47bygIFZEzmi.svg)](https://asciinema.org/a/gesp2jk3zkN6W47bygIFZEzmi)
 
 # Пример работы Brain-Progression
 
-[![Brain-Progression](https://asciinema.org/a/VxfdpFEK0g3mZFPMGXqLyg2Kl.svg)](https://asciinema.org/a/VxfdpFEK0g3mZFPMGXqLyg2Kl)
+[![Brain-Progression](https://asciinema.org/a/8G0NAXkcnHKvtU61ULBuLfIP5.svg)](https://asciinema.org/a/8G0NAXkcnHKvtU61ULBuLfIP5)
 
 # Пример работы Brain-Prime
 
-[![Brain-Prime](https://asciinema.org/a/U5wYEro2Dq7aV0qK5AO97D6kb.svg)](https://asciinema.org/a/U5wYEro2Dq7aV0qK5AO97D6kb)
+[![Brain-Prime](https://asciinema.org/a/zIJp7JQ0jikHmQDse8Fl92pVo.svg)](https://asciinema.org/a/zIJp7JQ0jikHmQDse8Fl92pVo)

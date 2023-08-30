@@ -1,10 +1,10 @@
 #!/usr/bin/env node
 
-const askQuestion = require('../src/cli');
+const askevenAnswer = require('../src/cli');
 
 console.log('Welcome to the Brain Games!');
 
-const userName = askQuestion('May I have your name?: ');
+const userName = askevenAnswer('May I have your name?: ');
 
 console.log(`Hello, ${userName}!`);
 
@@ -18,14 +18,14 @@ console.log('Answer "yes" if the number is even, otherwise answer "no".');
 for (let i = 0; i < step; i += 1) {
   const sicretNumber = Math.floor(Math.random() * 100) + 1;
   const correctAnswer = isEven(sicretNumber) ? 'yes' : 'no';
-  console.log(`Question: ${sicretNumber}`);
-  const question = askQuestion('Your answer: ');
-  if (correctAnswer === question) {
+  console.log(`evenAnswer: ${sicretNumber}`);
+  const evenAnswer = askevenAnswer('Your answer: ');
+  if (correctAnswer === evenAnswer) {
     console.log('Correct!');
     finish = true;
   } else {
     console.log(
-      `'${question}' is wrong answer ;(. Correct answer was '${correctAnswer}'.\nLet's try again, ${userName}!`,
+      `'${evenAnswer}' is wrong answer ;(. Correct answer was '${correctAnswer}'.\nLet's try again, ${userName}!`,
     );
     finish = false;
     break;
