@@ -1,42 +1,6 @@
 #!/usr/bin/env node
 
-const askQuestion = require('../src/cli');
+import gameEngine from '../src/gameEngine.js';
+import gcd from '../src/gcd.js';
 
-const checkGcd = (a, b) => {
-  if (b === 0) {
-    return a;
-  }
-  return checkGcd(b, a % b);
-};
-
-console.log('Welcome to the Brain Games!');
-
-const userName = askQuestion('May I have your name?: ');
-
-console.log(`Hello, ${userName}!`);
-
-const step = 3;
-let finish = false;
-
-console.log('Find the greatest common divisor of given numbers.');
-
-for (let i = 0; i < step; i += 1) {
-  const firstNum = Math.floor(Math.random() * 100) + 1;
-  const secNum = Math.floor(Math.random() * 100) + 1;
-  const gcdNumber = checkGcd(firstNum, secNum);
-  console.log(`Question: ${firstNum} ${secNum}`);
-  const gcdAnswer = askQuestion('Your answer: ');
-  if (gcdNumber === Number(gcdAnswer)) {
-    console.log('Correct!');
-    finish = true;
-  } else {
-    console.log(
-      `'${gcdAnswer}' is wrong answer ;(. Correct answer was '${gcdNumber}'.\nLet's try again, ${userName}!`,
-    );
-    finish = false;
-    break;
-  }
-}
-if (finish) {
-  console.log(`Congratulations, ${userName}!`);
-}
+gameEngine(gcd);

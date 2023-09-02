@@ -1,8 +1,8 @@
-const readlineSync = require('readline-sync');
+import readlineSync from 'readline-sync';
 
-const askQuestion = (question) => {
-  const answer = readlineSync.question(question);
+export default () => {
+  console.log('Welcome to the Brain Games!');
+  const answer = readlineSync.question('May I have your name?: ');
+  console.log(`Hello, ${answer}!`);
   return answer;
 };
-
-module.exports = askQuestion;
