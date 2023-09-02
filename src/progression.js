@@ -25,5 +25,5 @@ export default () => {
     startNumber = nexNum;
   }
 
-  return questionAndAnswer('Find the greatest common divisor of given numbers.', progressionArr.join(' '), String(correctAnswer));
+  return questionAndAnswer('What number is missing in the progression?', progressionArr.join(' '), String(correctAnswer));
 };
