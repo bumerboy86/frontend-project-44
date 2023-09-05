@@ -4,10 +4,12 @@ import getRandNum from '../utils/getRandNum.js';
 
 const primeGame = () => {
   const isPrime = (num) => {
-    for (let i = 2; i < num; i += 1) {
+    if (num <= 1) return false;
+
+    for (let i = 2; i <= Math.sqrt(num); i += 1) {
       if (num % i === 0) return false;
     }
-    return num !== 1;
+    return true;
   };
   const randomtNum = getRandNum(1, 100);
   const correctAnswer = isPrime(randomtNum) ? 'yes' : 'no';
