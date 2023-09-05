@@ -4,18 +4,15 @@ import getRandNum from '../utils/getRandNum.js';
 
 const primeGame = () => {
   const isPrime = (num) => {
-    if (Number.isNaN(num) || !Number.isFinite(num) || num % 1 || num < 2) {
+    const limit = Math.sqrt(num);
+    if (num <= 1) {
       return false;
     }
-
-    const squareRoot = Math.sqrt(num);
-
-    for (let i = 2; i <= squareRoot; i += 1) {
+    for (let i = 2; i <= limit; i += 1) {
       if (num % i === 0) {
         return false;
       }
     }
-
     return true;
   };
 
