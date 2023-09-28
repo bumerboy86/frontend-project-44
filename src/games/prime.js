@@ -15,13 +15,13 @@ const isPrime = (num) => {
 
 const primeGame = () => {
   const randomtNum = getRandNum(1, 100);
-  const correctAnswer = isPrime(randomtNum) ? 'yes' : 'no';
+  const correctAnswer = isPrime(randomtNum);
 
   return {
     questionText:
       'Answer "yes" if given number is prime. Otherwise answer "no".',
     generatedValue: randomtNum,
-    answer: correctAnswer,
+    answer: correctAnswer ? 'yes' : 'no',
   };
 };
 
