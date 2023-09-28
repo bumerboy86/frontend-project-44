@@ -1,6 +1,5 @@
-import getDataReturn from '../utils/gameDataReturn.js';
 import startGame from '../startGame.js';
-import getRandNum from '../utils/getRandNum.js';
+import { getRandNum } from '../utils.js';
 
 const primeGame = () => {
   const isPrime = (num) => {
@@ -17,11 +16,13 @@ const primeGame = () => {
 
   const randomtNum = getRandNum(1, 100);
   const correctAnswer = isPrime(randomtNum) ? 'yes' : 'no';
-  return getDataReturn(
-    'Answer "yes" if given number is prime. Otherwise answer "no".',
-    randomtNum,
-    correctAnswer,
-  );
+
+  return {
+    questionText:
+      'Answer "yes" if given number is prime. Otherwise answer "no".',
+    generatedValue: randomtNum,
+    answer: correctAnswer,
+  };
 };
 
 export default () => startGame(primeGame);

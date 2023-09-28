@@ -1,6 +1,5 @@
-import gameDataReturn from '../utils/gameDataReturn.js';
 import startGame from '../startGame.js';
-import getRandNum from '../utils/getRandNum.js';
+import { getRandNum } from '../utils.js';
 
 const calcGame = () => {
   const firstNum = getRandNum(1, 100);
@@ -8,11 +7,11 @@ const calcGame = () => {
   const mathOperator = Math.random() < 0.5;
   const correctAnswer = mathOperator ? firstNum + secNum : firstNum * secNum;
 
-  return gameDataReturn(
-    'What is the result of the expression?',
-    `${firstNum} ${mathOperator ? '+' : '*'} ${secNum}`,
-    String(correctAnswer),
-  );
+  return {
+    questionText: 'What is the result of the expression?',
+    generatedValue: `${firstNum} ${mathOperator ? '+' : '*'} ${secNum}`,
+    answer: String(correctAnswer),
+  };
 };
 
 export default () => startGame(calcGame);
